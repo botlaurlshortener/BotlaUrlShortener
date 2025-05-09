@@ -45,7 +45,7 @@ bot.onText(/\/api (.+)/, (msg, match) => {
   const chatId = msg.chat.id;
   const userToken = match[1].trim();
 
-  // Save the user's BotlaUrlShortener API token to the database
+  // Save the user's Adlinkfly API token to the database
   saveUserToken(chatId, userToken);
 
   const response = `Your BotlaUrlShortener API token set successfully. ✅️✅️ Your token is: ${userToken}`;
@@ -137,14 +137,14 @@ async function shortenUrl(chatId, url) {
   }
 }
 
-// Function to save user's BotlaUrlShortener API token
+// Function to save user's Adlinkfly API token
 function saveUserToken(chatId, token) {
   const dbData = getDatabaseData();
   dbData[chatId] = token;
   fs.writeFileSync('./src/database.json', JSON.stringify(dbData, null, 2));
 }
 
-// Function to retrieve user's BotlaUrlShortener API token
+// Function to retrieve user's Adlinkfly API token
 function getUserToken(chatId) {
   const dbData = getDatabaseData();
   return dbData[chatId];

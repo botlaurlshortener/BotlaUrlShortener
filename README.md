@@ -5,7 +5,7 @@ This is a Telegram bot that helps you shorten URLs using the [Adlinkfly Shortene
 ## Features
 - Shortens URLs using your adlinkfly API token.
 - Stores user-specific API tokens securely.
-- Supports `/start` and `/setapi` commands.
+- Supports `/start` and `/api` commands.
 
 ## Setup Instructions
 1. Fork repo,

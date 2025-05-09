@@ -3,7 +3,7 @@
 This is a Telegram bot that helps you shorten URLs using the [Adlinkfly Shortener](https://telegram.me/sgu4tech) service.
 
 ## Features
-- Shortens URLs using your adlinkfly API token.
+- Shortens URLs using your BotlaUrlShortener API token.
 - Stores user-specific API tokens securely.
 - Supports `/start` and `/api` commands.
 
